@@ -7,6 +7,8 @@ import Greetings from './components/greeting/Greetings';
 import CreditCard from './components/creditcard/CreditCard';
 import Rating from './components/rating/Rating';
 import DriverCard from './components/drivercard/DriverCard';
+import LikeButton from './components/likebutton/LikeButton';
+import ClickablePicture from './components/clickablepicture/ClickablePicture';
 
 function App() {
   return (
@@ -83,6 +85,11 @@ function App() {
           model: 'Audi A3',
           licensePlate: 'BE33ER',
         }}
+      />
+      <LikeButton />
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
       />
     </div>
   );
