@@ -10,6 +10,7 @@ import DriverCard from './components/drivercard/DriverCard';
 import LikeButton from './components/likebutton/LikeButton';
 import ClickablePicture from './components/clickablepicture/ClickablePicture';
 import Dice from './components/dice/Dice';
+import Carousel from './components/carousel/Carousel';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         lastName="Lop"
         firstName="Jake"
         gender="male"
-        birth="12/12/1912"
+        birth={'1988-05-11'}
         picture="https://randomuser.me/api/portraits/men/44.jpg"
         height={182}
       />
@@ -93,6 +94,14 @@ function App() {
         imgClicked="/img/persons/maxence-glasses.png"
       />
       <Dice />
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
     </div>
   );
 }

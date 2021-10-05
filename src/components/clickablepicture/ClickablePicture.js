@@ -20,7 +20,7 @@ class ClickablePicture extends React.Component {
     return (
       <div>
         <img
-          class="user-wearing-glasses"
+          className="user-wearing-glasses"
           onClick={this.handleToggle}
           src={this.state.img}
           alt="user-pic"
