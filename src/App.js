@@ -19,9 +19,9 @@ function App() {
         lastName="Lop"
         firstName="Jake"
         gender="male"
-        birth={'1988-05-11'}
+        birth={new Date('1992-07-14')}
         picture="https://randomuser.me/api/portraits/men/44.jpg"
-        height={182}
+        height={200}
       />
       <Greetings lang="ru">Rurik</Greetings>
       <Greetings lang="en">Stefania</Greetings>

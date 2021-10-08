@@ -22,8 +22,6 @@ const Greetings = (props) => {
     margin: '1px auto',
   };
 
-  console.log('children', children);
-
   return (
     <div className="greetings" style={stylesGreetings}>
       <p style={greetingText} lang={lang}>
