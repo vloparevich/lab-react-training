@@ -11,11 +11,15 @@ import LikeButton from './components/likebutton/LikeButton';
 import ClickablePicture from './components/clickablepicture/ClickablePicture';
 import Dice from './components/dice/Dice';
 import Carousel from './components/carousel/Carousel';
+import IdCard2 from './components/id-card-2/IdCard2';
+import Greetings2 from './components/Greetings-2/Greetings2';
+import Random2 from './components/Random-2/Random2';
+import BoxColor2 from './components/BoxColor-2/BoxColor2';
 
 function App() {
   return (
     <div className="App">
-      <IdCard
+      {/* <IdCard
         lastName="Lop"
         firstName="Jake"
         gender="male"
@@ -101,7 +105,30 @@ function App() {
           'https://randomuser.me/api/portraits/women/2.jpg',
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
+      /> */}
+      <IdCard2
+        lastName="Doe"
+        firstName="John"
+        gender="male"
+        height={178}
+        //  birth={new Date('1992-07-14')}
+        picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
+
+      <IdCard2
+        lastName="Delores "
+        firstName="Obrien"
+        gender="female"
+        height={172}
+        //  birth={new Date('1988-05-11')}
+        picture="https://randomuser.me/api/portraits/women/44.jpg"
+      />
+      <Greetings2 lang="de">Ludwig</Greetings2>
+      <Greetings2 lang="fr">François</Greetings2>
+      <Random2 min={2} max={6} />
+      <BoxColor2 r={255} g={0} b={0} />
+      <BoxColor2 r={200} g={100} b={0} />
+      <BoxColor2 r={12} g={0} b={100} />
     </div>
   );
 }
