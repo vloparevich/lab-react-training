@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default function BoxColor2(props) {
-  const { r, g, b } = props;
+export default function BoxColor2(propsAndAnythingYouWant) {
+  const { r, g, b } = propsAndAnythingYouWant;
   return (
     <div style={{ backgroundColor: `rgb(${r},${g}, ${b})` }}>
       <div style={{ color: '#fff' }}>
