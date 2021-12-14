@@ -15,6 +15,7 @@ import IdCard2 from './components/id-card-2/IdCard2';
 import Greetings2 from './components/Greetings-2/Greetings2';
 import Random2 from './components/Random-2/Random2';
 import BoxColor2 from './components/BoxColor-2/BoxColor2';
+import CreditCard2 from './components/CreditCard-2/CreditCard2';
 
 function App() {
   return (
@@ -129,6 +130,36 @@ function App() {
       <BoxColor2 r={255} g={0} b={0} />
       <BoxColor2 r={200} g={100} b={0} />
       <BoxColor2 r={12} g={0} b={100} />
+      <CreditCard2
+        type="Visa"
+        number="0123456789018845"
+        expirationMonth={3}
+        expirationYear={2021}
+        bank="BNP"
+        owner="Maxence Bouret"
+        bgColor="#11aa99"
+        color="white"
+      />
+      <CreditCard2
+        type="Master Card"
+        number="0123456789010995"
+        expirationMonth={3}
+        expirationYear={2021}
+        bank="N26"
+        owner="Maxence Bouret"
+        bgColor="#eeeeee"
+        color="#222222"
+      />
+      <CreditCard2
+        type="Visa"
+        number="0123456789016984"
+        expirationMonth={12}
+        expirationYear={2019}
+        bank="Name of the Bank"
+        owner="Firstname Lastname"
+        bgColor="#ddbb55"
+        color="white"
+      />
     </div>
   );
 }
